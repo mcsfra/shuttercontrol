@@ -1,0 +1,1435 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K22 ]
+[d frameptr 4065 ]
+"15 D:\GitHub\shuttercontrol\mplab\buttonmatrix.c
+[v _initButtonMatrix initButtonMatrix `(v  1 e 1 0 ]
+"30
+[v _getKeyForShutter getKeyForShutter `(uc  1 e 1 0 ]
+"35
+[v _setKeyForShutter setKeyForShutter `(v  1 e 1 0 ]
+"31 D:\GitHub\shuttercontrol\mplab\buttons.c
+[v _initButtonTimer initButtonTimer `(v  1 e 1 0 ]
+"67
+[v _getLastPressedKey getLastPressedKey `(uc  1 e 1 0 ]
+"73
+[v _decodeButton decodeButton `(v  1 e 1 0 ]
+"102
+[v _buttonsReset buttonsReset `(v  1 e 1 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"5 D:\GitHub\shuttercontrol\mplab\eeprom.c
+[v _eepromWrite eepromWrite `(v  1 e 1 0 ]
+"26
+[v _eepromRead eepromRead `(uc  1 e 1 0 ]
+"58 D:\GitHub\shuttercontrol\mplab\fifo.c
+[v _fifo1Get fifo1Get `(uc  1 e 1 0 ]
+"62
+[v _fifo2Get fifo2Get `(uc  1 e 1 0 ]
+"66
+[v _fifo3Get fifo3Get `(uc  1 e 1 0 ]
+[v i2_fifo3Get fifo3Get `(uc  1 e 1 0 ]
+"76
+[v _fifo1Put fifo1Put `(v  1 e 1 0 ]
+"80
+[v _fifo2Put fifo2Put `(v  1 e 1 0 ]
+"84
+[v _fifo3Put fifo3Put `(v  1 e 1 0 ]
+"93
+[v _fifo1Empty fifo1Empty `(uc  1 e 1 0 ]
+"99
+[v _fifo2Empty fifo2Empty `(uc  1 e 1 0 ]
+"106
+[v _fifo3Empty fifo3Empty `(uc  1 e 1 0 ]
+[v i2_fifo3Empty fifo3Empty `(uc  1 e 1 0 ]
+"4 D:\GitHub\shuttercontrol\mplab\hardware.c
+[v _initHardware initHardware `(v  1 e 1 0 ]
+"59 D:\GitHub\shuttercontrol\mplab\i2cslave.c
+[v _initI2CSlave initI2CSlave `(v  1 e 1 0 ]
+"133
+[v _testCommandOk testCommandOk `(uc  1 e 1 0 ]
+"154
+[v _i2cParser i2cParser `(v  1 e 1 0 ]
+"283
+[v _getShutterStatusByte1 getShutterStatusByte1 `(uc  1 e 1 0 ]
+"299
+[v _getShutterStatusByte2 getShutterStatusByte2 `(uc  1 e 1 0 ]
+"17 D:\GitHub\shuttercontrol\mplab\interrupts.c
+[v _high_isr high_isr `II(v  1 e 1 0 ]
+"318
+[v _low_isr low_isr `IIL(v  1 e 1 0 ]
+"62 D:\GitHub\shuttercontrol\mplab\main.c
+[v _main main `(v  1 e 1 0 ]
+"14 D:\GitHub\shuttercontrol\mplab\masterswitch.c
+[v _testeMasterTaster testeMasterTaster `(v  1 e 1 0 ]
+"18 D:\GitHub\shuttercontrol\mplab\protocol.c
+[v _initProtocol initProtocol `(v  1 e 1 0 ]
+"27
+[v _byteReceived byteReceived `(v  1 e 1 0 ]
+"19 D:\GitHub\shuttercontrol\mplab\rs485.c
+[v _initRS485 initRS485 `(v  1 e 1 0 ]
+"74 D:\GitHub\shuttercontrol\mplab\shutter.c
+[v _commandShutterUp commandShutterUp `(v  1 e 1 0 ]
+"101
+[v _commandShutterDown commandShutterDown `(v  1 e 1 0 ]
+"126
+[v _commandShutterStop commandShutterStop `(v  1 e 1 0 ]
+"198
+[v _testShortMove testShortMove `(v  1 e 1 0 ]
+"281
+[v _shutterStateMachine shutterStateMachine `(v  1 e 1 0 ]
+"363
+[v _initShutterStateMachine initShutterStateMachine `(v  1 e 1 0 ]
+"382
+[v _getShutterstatus getShutterstatus `(c  1 e 1 0 ]
+"415
+[v _getNumShutters getNumShutters `(uc  1 e 1 0 ]
+"422
+[v _fehler fehler `(v  1 e 1 0 ]
+"12 D:\GitHub\shuttercontrol\mplab\shuttergroups.c
+[v _storeShutterGroup storeShutterGroup `(v  1 e 1 0 ]
+"26
+[v _readShutterGroupByte readShutterGroupByte `(uc  1 e 1 0 ]
+"32
+[v _commandShutterGroupDown commandShutterGroupDown `(v  1 e 1 0 ]
+"43
+[v _commandShutterGroupUp commandShutterGroupUp `(v  1 e 1 0 ]
+"54
+[v _handleShutterShortMove handleShutterShortMove `(v  1 e 1 0 ]
+"70
+[v _findShuttergroupButton findShuttergroupButton `(c  1 e 1 0 ]
+"90
+[v _handleShuttergroupButton handleShuttergroupButton `(v  1 e 1 0 ]
+"101
+[v _releaseShuttergroupButton releaseShuttergroupButton `(v  1 e 1 0 ]
+"14 D:\GitHub\shuttercontrol\mplab\shutterhardware.c
+[v _shutterOn shutterOn `(v  1 e 1 0 ]
+"26
+[v _shutterOff shutterOff `(v  1 e 1 0 ]
+"39
+[v _shutterDirectionUp shutterDirectionUp `(v  1 e 1 0 ]
+"72
+[v _shutterDirectionDown shutterDirectionDown `(v  1 e 1 0 ]
+[s S825 button 10 `uc 1 buttonNumber 1 0 `uc 1 buttonFunction 1 1 `uc 1 isActive 1 2 `uc 1 watchdog 1 3 `*.37(v 1 risingEdge 2 4 `*.37(v 1 fallingEdge 2 6 `*.37(v 1 state 2 8 ]
+"22 D:\GitHub\shuttercontrol\mplab\buttons.c
+[v _buttons buttons `[24]S825  1 e 240 0 ]
+"24
+[v _lastPressedKey lastPressedKey `uc  1 e 1 0 ]
+"50 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f45k22.h
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"95
+[v _ANSELB ANSELB `VEuc  1 e 1 @3897 ]
+"145
+[v _ANSELC ANSELC `VEuc  1 e 1 @3898 ]
+"196
+[v _ANSELD ANSELD `VEuc  1 e 1 @3899 ]
+"3399
+[v _SSP2CON3 SSP2CON3 `VEuc  1 e 1 @3945 ]
+"3461
+[v _SSP2MSK SSP2MSK `VEuc  1 e 1 @3946 ]
+"3531
+[v _SSP2CON2 SSP2CON2 `VEuc  1 e 1 @3947 ]
+[s S2089 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"3566
+[s S2098 . 1 `uc 1 SEN2 1 0 :1:0 
+`uc 1 ADMSK12 1 0 :1:1 
+`uc 1 ADMSK22 1 0 :1:2 
+`uc 1 ADMSK32 1 0 :1:3 
+`uc 1 ACKEN2 1 0 :1:4 
+`uc 1 ACKDT2 1 0 :1:5 
+`uc 1 ACKSTAT2 1 0 :1:6 
+`uc 1 GCEN2 1 0 :1:7 
+]
+[s S2107 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RSEN2 1 0 :1:1 
+`uc 1 PEN2 1 0 :1:2 
+`uc 1 RCEN2 1 0 :1:3 
+`uc 1 ADMSK42 1 0 :1:4 
+`uc 1 ADMSK52 1 0 :1:5 
+]
+[u S2114 . 1 `S2089 1 . 1 0 `S2098 1 . 1 0 `S2107 1 . 1 0 ]
+[v _SSP2CON2bits SSP2CON2bits `VES2114  1 e 1 @3947 ]
+"3676
+[v _SSP2CON1 SSP2CON1 `VEuc  1 e 1 @3948 ]
+[s S338 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"3706
+[s S344 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S349 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S358 . 1 `S338 1 . 1 0 `S344 1 . 1 0 `S349 1 . 1 0 ]
+[v _SSP2CON1bits SSP2CON1bits `VES358  1 e 1 @3948 ]
+"3796
+[v _SSP2STAT SSP2STAT `VEuc  1 e 1 @3949 ]
+[s S89 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"3931
+[s S92 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S95 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S104 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S109 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 A 1 0 :1:5 
+]
+[s S114 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S119 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S124 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S127 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S130 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S135 . 1 `uc 1 BF2 1 0 :1:0 
+`uc 1 UA2 1 0 :1:1 
+`uc 1 I2C_READ2 1 0 :1:2 
+`uc 1 I2C_START2 1 0 :1:3 
+`uc 1 I2C_STOP2 1 0 :1:4 
+`uc 1 DA2 1 0 :1:5 
+`uc 1 CKE2 1 0 :1:6 
+`uc 1 SMP2 1 0 :1:7 
+]
+[s S144 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE2 1 0 :1:2 
+`uc 1 S2 1 0 :1:3 
+`uc 1 P2 1 0 :1:4 
+`uc 1 DATA_ADDRESS2 1 0 :1:5 
+]
+[s S150 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW2 1 0 :1:2 
+`uc 1 START2 1 0 :1:3 
+`uc 1 STOP2 1 0 :1:4 
+`uc 1 D_A2 1 0 :1:5 
+]
+[s S156 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A2 1 0 :1:5 
+]
+[s S159 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_nA2 1 0 :1:5 
+]
+[s S164 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W2 1 0 :1:2 
+]
+[s S167 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 I2C_DAT2 1 0 :1:5 
+]
+[s S172 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W2 1 0 :1:2 
+]
+[s S175 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A2 1 0 :1:5 
+]
+[s S178 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA2 1 0 :1:5 
+]
+[s S183 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE2 1 0 :1:2 
+]
+[s S186 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS2 1 0 :1:5 
+]
+[s S189 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS2 1 0 :1:5 
+]
+[u S194 . 1 `S89 1 . 1 0 `S92 1 . 1 0 `S95 1 . 1 0 `S104 1 . 1 0 `S109 1 . 1 0 `S114 1 . 1 0 `S119 1 . 1 0 `S124 1 . 1 0 `S127 1 . 1 0 `S130 1 . 1 0 `S135 1 . 1 0 `S144 1 . 1 0 `S150 1 . 1 0 `S156 1 . 1 0 `S159 1 . 1 0 `S164 1 . 1 0 `S167 1 . 1 0 `S172 1 . 1 0 `S175 1 . 1 0 `S178 1 . 1 0 `S183 1 . 1 0 `S186 1 . 1 0 `S189 1 . 1 0 ]
+[v _SSP2STATbits SSP2STATbits `VES194  1 e 1 @3949 ]
+"4196
+[v _SSP2ADD SSP2ADD `VEuc  1 e 1 @3950 ]
+"4266
+[v _SSP2BUF SSP2BUF `VEuc  1 e 1 @3951 ]
+"5362
+[v _CM2CON0 CM2CON0 `VEuc  1 e 1 @3960 ]
+"5642
+[v _CM1CON0 CM1CON0 `VEuc  1 e 1 @3961 ]
+"6278
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+[s S1386 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"6363
+[s S1395 . 1 `uc 1 AN0 1 0 :1:0 
+`uc 1 AN1 1 0 :1:1 
+`uc 1 AN2 1 0 :1:2 
+`uc 1 AN3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 AN4 1 0 :1:5 
+]
+[s S1402 . 1 `uc 1 C12IN0M 1 0 :1:0 
+`uc 1 C12IN1M 1 0 :1:1 
+`uc 1 C2INP 1 0 :1:2 
+`uc 1 C1INP 1 0 :1:3 
+`uc 1 C1OUT 1 0 :1:4 
+`uc 1 C2OUT 1 0 :1:5 
+]
+[s S1409 . 1 `uc 1 C12IN0N 1 0 :1:0 
+`uc 1 C12IN1N 1 0 :1:1 
+`uc 1 VREFM 1 0 :1:2 
+`uc 1 VREFP 1 0 :1:3 
+`uc 1 T0CKI 1 0 :1:4 
+`uc 1 SS 1 0 :1:5 
+]
+[s S1416 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_SS 1 0 :1:5 
+]
+[s S1419 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 VREFN 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SRQ 1 0 :1:4 
+`uc 1 nSS 1 0 :1:5 
+]
+[s S1425 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CVREF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 LVDIN 1 0 :1:5 
+]
+[s S1430 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 DACOUT 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 HLVDIN 1 0 :1:5 
+]
+[s S1435 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SS1 1 0 :1:5 
+]
+[s S1438 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_SS1 1 0 :1:5 
+]
+[s S1441 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 nSS1 1 0 :1:5 
+]
+[s S1444 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRNQ 1 0 :1:5 
+]
+[s S1447 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+`uc 1 . 1 0 :6:1 
+`uc 1 RJPU 1 0 :1:7 
+]
+[u S1451 . 1 `S1386 1 . 1 0 `S1395 1 . 1 0 `S1402 1 . 1 0 `S1409 1 . 1 0 `S1416 1 . 1 0 `S1419 1 . 1 0 `S1425 1 . 1 0 `S1430 1 . 1 0 `S1435 1 . 1 0 `S1438 1 . 1 0 `S1441 1 . 1 0 `S1444 1 . 1 0 `S1447 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES1451  1 e 1 @3968 ]
+"6563
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"6833
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"7140
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+[s S1940 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"7203
+[s S1949 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 P2B 1 0 :1:2 
+`uc 1 P2C 1 0 :1:3 
+`uc 1 P2D 1 0 :1:4 
+`uc 1 P1B 1 0 :1:5 
+`uc 1 P1C 1 0 :1:6 
+`uc 1 P1D 1 0 :1:7 
+]
+[s S1957 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP4 1 0 :1:1 
+`uc 1 . 1 0 :4:2 
+`uc 1 TX2 1 0 :1:6 
+`uc 1 RX2 1 0 :1:7 
+]
+[s S1963 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_SS2 1 0 :1:3 
+]
+[s S1966 . 1 `uc 1 SCK2 1 0 :1:0 
+`uc 1 SDI2 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 nSS2 1 0 :1:3 
+`uc 1 SDO2 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK2 1 0 :1:6 
+`uc 1 DT2 1 0 :1:7 
+]
+[s S1975 . 1 `uc 1 SCL2 1 0 :1:0 
+`uc 1 SDA2 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SS2 1 0 :1:3 
+]
+[s S1980 . 1 `uc 1 AN20 1 0 :1:0 
+`uc 1 AN21 1 0 :1:1 
+`uc 1 AN22 1 0 :1:2 
+`uc 1 AN23 1 0 :1:3 
+`uc 1 AN24 1 0 :1:4 
+`uc 1 AN25 1 0 :1:5 
+`uc 1 AN26 1 0 :1:6 
+`uc 1 AN27 1 0 :1:7 
+]
+[u S1989 . 1 `S1940 1 . 1 0 `S1949 1 . 1 0 `S1957 1 . 1 0 `S1963 1 . 1 0 `S1966 1 . 1 0 `S1975 1 . 1 0 `S1980 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES1989  1 e 1 @3971 ]
+"7558
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S633 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"7585
+[s S642 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S651 . 1 `S633 1 . 1 0 `S642 1 . 1 0 ]
+[v _LATAbits LATAbits `VES651  1 e 1 @3977 ]
+"7670
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+[s S1234 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"7697
+[s S1243 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S1252 . 1 `S1234 1 . 1 0 `S1243 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1252  1 e 1 @3978 ]
+"7782
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+[s S1314 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"7809
+[s S1323 . 1 `uc 1 LC0 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+`uc 1 LC2 1 0 :1:2 
+`uc 1 LC3 1 0 :1:3 
+`uc 1 LC4 1 0 :1:4 
+`uc 1 LC5 1 0 :1:5 
+`uc 1 LC6 1 0 :1:6 
+`uc 1 LC7 1 0 :1:7 
+]
+[u S1332 . 1 `S1314 1 . 1 0 `S1323 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1332  1 e 1 @3979 ]
+"7894
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S1274 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"7921
+[s S1283 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S1292 . 1 `S1274 1 . 1 0 `S1283 1 . 1 0 ]
+[v _LATDbits LATDbits `VES1292  1 e 1 @3980 ]
+"8058
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"8280
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"8502
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"8724
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S2048 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"8756
+[u S2066 . 1 `S2048 1 . 1 0 `S1940 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES2066  1 e 1 @3989 ]
+[s S1136 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"9434
+[s S1144 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+[u S1149 . 1 `S1136 1 . 1 0 `S1144 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES1149  1 e 1 @3997 ]
+[s S21 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"9511
+[s S29 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[u S34 . 1 `S21 1 . 1 0 `S29 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES34  1 e 1 @3998 ]
+[s S1106 . 1 `uc 1 TMR1IP 1 0 :1:0 
+`uc 1 TMR2IP 1 0 :1:1 
+`uc 1 CCP1IP 1 0 :1:2 
+`uc 1 SSP1IP 1 0 :1:3 
+`uc 1 TX1IP 1 0 :1:4 
+`uc 1 RC1IP 1 0 :1:5 
+`uc 1 ADIP 1 0 :1:6 
+]
+"9588
+[s S1114 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIP 1 0 :1:3 
+`uc 1 TXIP 1 0 :1:4 
+`uc 1 RCIP 1 0 :1:5 
+]
+[u S1119 . 1 `S1106 1 . 1 0 `S1114 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES1119  1 e 1 @3999 ]
+[s S2199 . 1 `uc 1 TMR1GIE 1 0 :1:0 
+`uc 1 TMR3GIE 1 0 :1:1 
+`uc 1 TMR5GIE 1 0 :1:2 
+`uc 1 CTMUIE 1 0 :1:3 
+`uc 1 TX2IE 1 0 :1:4 
+`uc 1 RC2IE 1 0 :1:5 
+`uc 1 BCL2IE 1 0 :1:6 
+`uc 1 SSP2IE 1 0 :1:7 
+]
+"9931
+[s S2208 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+[s S2214 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+[u S2219 . 1 `S2199 1 . 1 0 `S2208 1 . 1 0 `S2214 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES2219  1 e 1 @4003 ]
+[s S57 . 1 `uc 1 TMR1GIF 1 0 :1:0 
+`uc 1 TMR3GIF 1 0 :1:1 
+`uc 1 TMR5GIF 1 0 :1:2 
+`uc 1 CTMUIF 1 0 :1:3 
+`uc 1 TX2IF 1 0 :1:4 
+`uc 1 RC2IF 1 0 :1:5 
+`uc 1 BCL2IF 1 0 :1:6 
+`uc 1 SSP2IF 1 0 :1:7 
+]
+"10034
+[s S66 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIF 1 0 :1:4 
+]
+[u S71 . 1 `S57 1 . 1 0 `S66 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES71  1 e 1 @4004 ]
+[s S2167 . 1 `uc 1 TMR1GIP 1 0 :1:0 
+`uc 1 TMR3GIP 1 0 :1:1 
+`uc 1 TMR5GIP 1 0 :1:2 
+`uc 1 CTMUIP 1 0 :1:3 
+`uc 1 TX2IP 1 0 :1:4 
+`uc 1 RC2IP 1 0 :1:5 
+`uc 1 BCL2IP 1 0 :1:6 
+`uc 1 SSP2IP 1 0 :1:7 
+]
+"10112
+[s S2176 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIP 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIP 1 0 :1:4 
+]
+[u S2181 . 1 `S2167 1 . 1 0 `S2176 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES2181  1 e 1 @4005 ]
+[s S1847 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"10188
+[s S1856 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 EEFS 1 0 :1:6 
+]
+[u S1859 . 1 `S1847 1 . 1 0 `S1856 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES1859  1 e 1 @4006 ]
+"10233
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+"10253
+[v _EEDATA EEDATA `VEuc  1 e 1 @4008 ]
+"10273
+[v _EEADR EEADR `VEuc  1 e 1 @4009 ]
+[s S1648 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"10396
+[s S1657 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S1660 . 1 `uc 1 RX9D1 1 0 :1:0 
+`uc 1 OERR1 1 0 :1:1 
+`uc 1 FERR1 1 0 :1:2 
+`uc 1 ADDEN1 1 0 :1:3 
+`uc 1 CREN1 1 0 :1:4 
+`uc 1 SREN1 1 0 :1:5 
+`uc 1 RX91 1 0 :1:6 
+`uc 1 SPEN1 1 0 :1:7 
+]
+[s S1669 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S1673 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S1676 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[u S1679 . 1 `S1648 1 . 1 0 `S1657 1 . 1 0 `S1660 1 . 1 0 `S1669 1 . 1 0 `S1673 1 . 1 0 `S1676 1 . 1 0 ]
+[v _RCSTA1bits RCSTA1bits `VES1679  1 e 1 @4011 ]
+"11174
+[v _TXREG1 TXREG1 `VEuc  1 e 1 @4013 ]
+"11257
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"11330
+[v _SPBRG1 SPBRG1 `VEuc  1 e 1 @4015 ]
+"11413
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+[s S1563 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 CKTXP 1 0 :1:4 
+`uc 1 DTRXP 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"12600
+[s S1572 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SCKP 1 0 :1:4 
+]
+[s S1575 . 1 `uc 1 ABDEN1 1 0 :1:0 
+`uc 1 WUE1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG161 1 0 :1:3 
+`uc 1 SCKP1 1 0 :1:4 
+`uc 1 DTRXP1 1 0 :1:5 
+`uc 1 RCIDL1 1 0 :1:6 
+`uc 1 ABDOVF1 1 0 :1:7 
+]
+[s S1584 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXCKP 1 0 :1:4 
+`uc 1 RXDTP 1 0 :1:5 
+`uc 1 RCMT 1 0 :1:6 
+]
+[s S1589 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXCKP1 1 0 :1:4 
+`uc 1 RXDTP1 1 0 :1:5 
+`uc 1 RCMT1 1 0 :1:6 
+]
+[s S1594 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RXCKP 1 0 :1:5 
+]
+[s S1597 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 W4E 1 0 :1:1 
+]
+[u S1600 . 1 `S1563 1 . 1 0 `S1572 1 . 1 0 `S1575 1 . 1 0 `S1584 1 . 1 0 `S1589 1 . 1 0 `S1594 1 . 1 0 `S1597 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES1600  1 e 1 @4024 ]
+[s S1056 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"15665
+[s S1059 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1SOSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+[s S1066 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[s S1075 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN 1 0 :1:3 
+]
+[u S1078 . 1 `S1056 1 . 1 0 `S1059 1 . 1 0 `S1066 1 . 1 0 `S1075 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES1078  1 e 1 @4045 ]
+"15752
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"15772
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+[s S539 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"15835
+[s S541 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S544 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S547 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S550 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S553 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S562 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S568 . 1 `S539 1 . 1 0 `S541 1 . 1 0 `S544 1 . 1 0 `S547 1 . 1 0 `S550 1 . 1 0 `S553 1 . 1 0 `S562 1 . 1 0 ]
+[v _RCONbits RCONbits `VES568  1 e 1 @4048 ]
+[s S746 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 HFIOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"16033
+[s S752 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 IOFS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S760 . 1 `S746 1 . 1 0 `S752 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES760  1 e 1 @4051 ]
+[s S845 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"16113
+[s S852 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S856 . 1 `S845 1 . 1 0 `S852 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES856  1 e 1 @4053 ]
+"16170
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"16190
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S938 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"16845
+[s S941 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S950 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S953 . 1 `S938 1 . 1 0 `S941 1 . 1 0 `S950 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES953  1 e 1 @4081 ]
+[s S383 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"16922
+[s S392 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S401 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S405 . 1 `S383 1 . 1 0 `S392 1 . 1 0 `S401 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES405  1 e 1 @4082 ]
+"18666
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"12 D:\GitHub\shuttercontrol\mplab\fifo.c
+[v _fifo1 fifo1 `[16]uc  1 e 16 0 ]
+"13
+[v _fifo2 fifo2 `[16]uc  1 e 16 0 ]
+"14
+[v _fifo3 fifo3 `[16]uc  1 e 16 0 ]
+"19
+[v _fifo1In fifo1In `uc  1 e 1 0 ]
+"20
+[v _fifo2In fifo2In `uc  1 e 1 0 ]
+"21
+[v _fifo3In fifo3In `uc  1 e 1 0 ]
+"26
+[v _fifo1Out fifo1Out `uc  1 e 1 0 ]
+"27
+[v _fifo2Out fifo2Out `uc  1 e 1 0 ]
+"28
+[v _fifo3Out fifo3Out `uc  1 e 1 0 ]
+"16 D:\GitHub\shuttercontrol\mplab\i2cslave.c
+[v _bSceneChanged bSceneChanged `VEuc  1 e 1 0 ]
+"18
+[v _bStoreDone bStoreDone `VEuc  1 e 1 0 ]
+"34
+[v _spiState spiState `VEuc  1 e 1 0 ]
+"36
+[v _spiCommand spiCommand `VEuc  1 e 1 0 ]
+"38
+[v _spiCount spiCount `uc  1 e 1 0 ]
+"39
+[v _spiChecksum spiChecksum `uc  1 e 1 0 ]
+"40
+[v _spiData spiData `[64]uc  1 e 64 0 ]
+"13 D:\GitHub\shuttercontrol\mplab\interrupts.c
+[v _bButtonTimer bButtonTimer `VEuc  1 e 1 0 ]
+"14
+[v _bShutterTimer bShutterTimer `VEuc  1 e 1 0 ]
+"51 D:\GitHub\shuttercontrol\mplab\main.c
+[v _c c `uc  1 e 1 0 ]
+"56
+[v _debugCount debugCount `uc  1 e 1 0 ]
+"10 D:\GitHub\shuttercontrol\mplab\masterswitch.c
+[v _entprellCounter entprellCounter `ui  1 e 2 0 ]
+"10 D:\GitHub\shuttercontrol\mplab\protocol.c
+[v _protocolState protocolState `uc  1 e 1 0 ]
+"24
+[v _device device `uc  1 s 1 device ]
+"25
+[v _button button `uc  1 s 1 button ]
+[s S1027 shutter 3 `uc 1 state 1 0 `ui 1 count 2 1 ]
+"35 D:\GitHub\shuttercontrol\mplab\shutter.c
+[v _shutter shutter `[5]S1027  1 e 15 0 ]
+"62 D:\GitHub\shuttercontrol\mplab\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"65
+[v main@recv recv `i  1 a 2 0 ]
+"140
+} 0
+"14 D:\GitHub\shuttercontrol\mplab\masterswitch.c
+[v _testeMasterTaster testeMasterTaster `(v  1 e 1 0 ]
+{
+"27
+} 0
+"281 D:\GitHub\shuttercontrol\mplab\shutter.c
+[v _shutterStateMachine shutterStateMachine `(v  1 e 1 0 ]
+{
+[v shutterStateMachine@which which `uc  1 a 1 wreg ]
+[s S1027 shutter 3 `uc 1 state 1 0 `ui 1 count 2 1 ]
+"283
+[v shutterStateMachine@sp sp `*.39S1027  1 a 2 26 ]
+"281
+[v shutterStateMachine@which which `uc  1 a 1 wreg ]
+"283
+[v shutterStateMachine@which which `uc  1 a 1 25 ]
+"360
+} 0
+"14 D:\GitHub\shuttercontrol\mplab\shutterhardware.c
+[v _shutterOn shutterOn `(v  1 e 1 0 ]
+{
+[v shutterOn@shutternumber shutternumber `uc  1 a 1 wreg ]
+[v shutterOn@shutternumber shutternumber `uc  1 a 1 wreg ]
+[v shutterOn@shutternumber shutternumber `uc  1 a 1 22 ]
+"24
+} 0
+"26
+[v _shutterOff shutterOff `(v  1 e 1 0 ]
+{
+[v shutterOff@shutternumber shutternumber `uc  1 a 1 wreg ]
+[v shutterOff@shutternumber shutternumber `uc  1 a 1 wreg ]
+[v shutterOff@shutternumber shutternumber `uc  1 a 1 22 ]
+"36
+} 0
+"39
+[v _shutterDirectionUp shutterDirectionUp `(v  1 e 1 0 ]
+{
+[v shutterDirectionUp@shutternumber shutternumber `uc  1 a 1 wreg ]
+[v shutterDirectionUp@shutternumber shutternumber `uc  1 a 1 wreg ]
+[v shutterDirectionUp@shutternumber shutternumber `uc  1 a 1 22 ]
+"68
+} 0
+"72
+[v _shutterDirectionDown shutterDirectionDown `(v  1 e 1 0 ]
+{
+[v shutterDirectionDown@shutternumber shutternumber `uc  1 a 1 wreg ]
+[v shutterDirectionDown@shutternumber shutternumber `uc  1 a 1 wreg ]
+[v shutterDirectionDown@shutternumber shutternumber `uc  1 a 1 22 ]
+"101
+} 0
+"363 D:\GitHub\shuttercontrol\mplab\shutter.c
+[v _initShutterStateMachine initShutterStateMachine `(v  1 e 1 0 ]
+{
+"365
+[v initShutterStateMachine@i i `uc  1 a 1 23 ]
+"380
+} 0
+"415
+[v _getNumShutters getNumShutters `(uc  1 e 1 0 ]
+{
+"418
+} 0
+"19 D:\GitHub\shuttercontrol\mplab\rs485.c
+[v _initRS485 initRS485 `(v  1 e 1 0 ]
+{
+"32
+} 0
+"18 D:\GitHub\shuttercontrol\mplab\protocol.c
+[v _initProtocol initProtocol `(v  1 e 1 0 ]
+{
+"22
+} 0
+"59 D:\GitHub\shuttercontrol\mplab\i2cslave.c
+[v _initI2CSlave initI2CSlave `(v  1 e 1 0 ]
+{
+[v initI2CSlave@adress adress `uc  1 a 1 wreg ]
+[v initI2CSlave@adress adress `uc  1 a 1 wreg ]
+"63
+[v initI2CSlave@adress adress `uc  1 a 1 22 ]
+"105
+} 0
+"4 D:\GitHub\shuttercontrol\mplab\hardware.c
+[v _initHardware initHardware `(v  1 e 1 0 ]
+{
+"44
+} 0
+"31 D:\GitHub\shuttercontrol\mplab\buttons.c
+[v _initButtonTimer initButtonTimer `(v  1 e 1 0 ]
+{
+"33
+[v initButtonTimer@i i `uc  1 a 1 22 ]
+"61
+} 0
+"154 D:\GitHub\shuttercontrol\mplab\i2cslave.c
+[v _i2cParser i2cParser `(v  1 e 1 0 ]
+{
+[v i2cParser@data data `uc  1 a 1 wreg ]
+[v i2cParser@data data `uc  1 a 1 wreg ]
+[v i2cParser@data data `uc  1 a 1 31 ]
+"276
+} 0
+"133
+[v _testCommandOk testCommandOk `(uc  1 e 1 0 ]
+{
+[v testCommandOk@numBytes numBytes `uc  1 a 1 wreg ]
+[v testCommandOk@numBytes numBytes `uc  1 a 1 wreg ]
+"135
+[v testCommandOk@numBytes numBytes `uc  1 a 1 25 ]
+"147
+} 0
+"84 D:\GitHub\shuttercontrol\mplab\fifo.c
+[v _fifo3Put fifo3Put `(v  1 e 1 0 ]
+{
+[v fifo3Put@in in `uc  1 a 1 wreg ]
+[v fifo3Put@in in `uc  1 a 1 wreg ]
+[v fifo3Put@in in `uc  1 a 1 24 ]
+"86
+} 0
+"12 D:\GitHub\shuttercontrol\mplab\shuttergroups.c
+[v _storeShutterGroup storeShutterGroup `(v  1 e 1 0 ]
+{
+[v storeShutterGroup@number number `uc  1 a 1 wreg ]
+[v storeShutterGroup@number number `uc  1 a 1 wreg ]
+[v storeShutterGroup@bitmask bitmask `uc  1 p 1 24 ]
+[v storeShutterGroup@keyUp keyUp `uc  1 p 1 25 ]
+[v storeShutterGroup@keyDown keyDown `uc  1 p 1 26 ]
+"14
+[v storeShutterGroup@number number `uc  1 a 1 27 ]
+"17
+} 0
+"35 D:\GitHub\shuttercontrol\mplab\buttonmatrix.c
+[v _setKeyForShutter setKeyForShutter `(v  1 e 1 0 ]
+{
+[v setKeyForShutter@shutter shutter `uc  1 a 1 wreg ]
+[v setKeyForShutter@shutter shutter `uc  1 a 1 wreg ]
+[v setKeyForShutter@key key `uc  1 p 1 24 ]
+"37
+[v setKeyForShutter@shutter shutter `uc  1 a 1 25 ]
+"39
+} 0
+"15
+[v _initButtonMatrix initButtonMatrix `(v  1 e 1 0 ]
+{
+"18
+[v initButtonMatrix@i i `uc  1 a 1 23 ]
+"17
+[v initButtonMatrix@c c `uc  1 a 1 22 ]
+"28
+} 0
+"5 D:\GitHub\shuttercontrol\mplab\eeprom.c
+[v _eepromWrite eepromWrite `(v  1 e 1 0 ]
+{
+[v eepromWrite@address address `uc  1 a 1 wreg ]
+[v eepromWrite@address address `uc  1 a 1 wreg ]
+[v eepromWrite@data data `uc  1 p 1 22 ]
+[v eepromWrite@address address `uc  1 a 1 23 ]
+"22
+} 0
+"299 D:\GitHub\shuttercontrol\mplab\i2cslave.c
+[v _getShutterStatusByte2 getShutterStatusByte2 `(uc  1 e 1 0 ]
+{
+"301
+[v getShutterStatusByte2@i i `uc  1 a 1 28 ]
+"302
+[v getShutterStatusByte2@r r `uc  1 a 1 27 ]
+"310
+} 0
+"283
+[v _getShutterStatusByte1 getShutterStatusByte1 `(uc  1 e 1 0 ]
+{
+"285
+[v getShutterStatusByte1@i i `uc  1 a 1 28 ]
+"286
+[v getShutterStatusByte1@r r `uc  1 a 1 27 ]
+"293
+} 0
+"382 D:\GitHub\shuttercontrol\mplab\shutter.c
+[v _getShutterstatus getShutterstatus `(c  1 e 1 0 ]
+{
+[v getShutterstatus@which which `uc  1 a 1 wreg ]
+[s S1027 shutter 3 `uc 1 state 1 0 `ui 1 count 2 1 ]
+"384
+[v getShutterstatus@sp sp `*.39S1027  1 a 2 22 ]
+"382
+[v getShutterstatus@which which `uc  1 a 1 wreg ]
+"384
+[v getShutterstatus@which which `uc  1 a 1 24 ]
+"409
+} 0
+"67 D:\GitHub\shuttercontrol\mplab\buttons.c
+[v _getLastPressedKey getLastPressedKey `(uc  1 e 1 0 ]
+{
+"70
+} 0
+"30 D:\GitHub\shuttercontrol\mplab\buttonmatrix.c
+[v _getKeyForShutter getKeyForShutter `(uc  1 e 1 0 ]
+{
+[v getKeyForShutter@shutter shutter `uc  1 a 1 wreg ]
+[v getKeyForShutter@shutter shutter `uc  1 a 1 wreg ]
+"32
+[v getKeyForShutter@shutter shutter `uc  1 a 1 23 ]
+"33
+} 0
+"66 D:\GitHub\shuttercontrol\mplab\fifo.c
+[v _fifo3Get fifo3Get `(uc  1 e 1 0 ]
+{
+"68
+} 0
+"106
+[v _fifo3Empty fifo3Empty `(uc  1 e 1 0 ]
+{
+"110
+} 0
+"126 D:\GitHub\shuttercontrol\mplab\shutter.c
+[v _commandShutterStop commandShutterStop `(v  1 e 1 0 ]
+{
+[v commandShutterStop@shutternumber shutternumber `uc  1 a 1 wreg ]
+"128
+[v commandShutterStop@i i `i  1 a 2 29 ]
+"126
+[v commandShutterStop@shutternumber shutternumber `uc  1 a 1 wreg ]
+"130
+[v commandShutterStop@shutternumber shutternumber `uc  1 a 1 28 ]
+"141
+} 0
+"422
+[v _fehler fehler `(v  1 e 1 0 ]
+{
+[v fehler@updown updown `uc  1 a 1 wreg ]
+"425
+[v fehler@lastState lastState `uc  1 a 1 24 ]
+"424
+[v fehler@modUpDown modUpDown `uc  1 a 1 23 ]
+"422
+[v fehler@updown updown `uc  1 a 1 wreg ]
+[v fehler@ls ls `uc  1 p 1 22 ]
+"424
+[v fehler@updown updown `uc  1 a 1 25 ]
+"429
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 26 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 22 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 24 ]
+"53
+} 0
+"62 D:\GitHub\shuttercontrol\mplab\fifo.c
+[v _fifo2Get fifo2Get `(uc  1 e 1 0 ]
+{
+"64
+} 0
+"99
+[v _fifo2Empty fifo2Empty `(uc  1 e 1 0 ]
+{
+"103
+} 0
+"58
+[v _fifo1Get fifo1Get `(uc  1 e 1 0 ]
+{
+"60
+} 0
+"93
+[v _fifo1Empty fifo1Empty `(uc  1 e 1 0 ]
+{
+"97
+} 0
+"27 D:\GitHub\shuttercontrol\mplab\protocol.c
+[v _byteReceived byteReceived `(v  1 e 1 0 ]
+{
+[v byteReceived@b b `uc  1 a 1 wreg ]
+"30
+[v byteReceived@code code `uc  1 a 1 32 ]
+"29
+[v byteReceived@checksum checksum `uc  1 a 1 31 ]
+"27
+[v byteReceived@b b `uc  1 a 1 wreg ]
+"37
+[v byteReceived@b b `uc  1 a 1 33 ]
+"61
+} 0
+"73 D:\GitHub\shuttercontrol\mplab\buttons.c
+[v _decodeButton decodeButton `(v  1 e 1 0 ]
+{
+[v decodeButton@code code `uc  1 a 1 wreg ]
+"75
+[v decodeButton@buttonIndex buttonIndex `c  1 a 1 29 ]
+"73
+[v decodeButton@code code `uc  1 a 1 wreg ]
+"75
+[v decodeButton@code code `uc  1 a 1 28 ]
+"88
+} 0
+"90 D:\GitHub\shuttercontrol\mplab\shuttergroups.c
+[v _handleShuttergroupButton handleShuttergroupButton `(v  1 e 1 0 ]
+{
+[v handleShuttergroupButton@buttonIndex buttonIndex `uc  1 a 1 wreg ]
+[v handleShuttergroupButton@buttonIndex buttonIndex `uc  1 a 1 wreg ]
+"92
+[v handleShuttergroupButton@buttonIndex buttonIndex `uc  1 a 1 27 ]
+"99
+} 0
+"43
+[v _commandShutterGroupUp commandShutterGroupUp `(v  1 e 1 0 ]
+{
+[v commandShutterGroupUp@group group `uc  1 a 1 wreg ]
+"45
+[v commandShutterGroupUp@g g `uc  1 a 1 26 ]
+"43
+[v commandShutterGroupUp@group group `uc  1 a 1 wreg ]
+"45
+[v commandShutterGroupUp@group group `uc  1 a 1 25 ]
+"52
+} 0
+"74 D:\GitHub\shuttercontrol\mplab\shutter.c
+[v _commandShutterUp commandShutterUp `(v  1 e 1 0 ]
+{
+[v commandShutterUp@shutternumber shutternumber `uc  1 a 1 wreg ]
+[s S1027 shutter 3 `uc 1 state 1 0 `ui 1 count 2 1 ]
+"79
+[v commandShutterUp@sp sp `*.39S1027  1 a 2 23 ]
+"74
+[v commandShutterUp@shutternumber shutternumber `uc  1 a 1 wreg ]
+"76
+[v commandShutterUp@shutternumber shutternumber `uc  1 a 1 22 ]
+"99
+} 0
+"32 D:\GitHub\shuttercontrol\mplab\shuttergroups.c
+[v _commandShutterGroupDown commandShutterGroupDown `(v  1 e 1 0 ]
+{
+[v commandShutterGroupDown@group group `uc  1 a 1 wreg ]
+"34
+[v commandShutterGroupDown@g g `uc  1 a 1 26 ]
+"32
+[v commandShutterGroupDown@group group `uc  1 a 1 wreg ]
+"34
+[v commandShutterGroupDown@group group `uc  1 a 1 25 ]
+"41
+} 0
+"101 D:\GitHub\shuttercontrol\mplab\shutter.c
+[v _commandShutterDown commandShutterDown `(v  1 e 1 0 ]
+{
+[v commandShutterDown@shutternumber shutternumber `uc  1 a 1 wreg ]
+[s S1027 shutter 3 `uc 1 state 1 0 `ui 1 count 2 1 ]
+"106
+[v commandShutterDown@sp sp `*.39S1027  1 a 2 23 ]
+"101
+[v commandShutterDown@shutternumber shutternumber `uc  1 a 1 wreg ]
+"103
+[v commandShutterDown@shutternumber shutternumber `uc  1 a 1 22 ]
+"124
+} 0
+"70 D:\GitHub\shuttercontrol\mplab\shuttergroups.c
+[v _findShuttergroupButton findShuttergroupButton `(c  1 e 1 0 ]
+{
+[v findShuttergroupButton@button button `uc  1 a 1 wreg ]
+"72
+[v findShuttergroupButton@i i `uc  1 a 1 24 ]
+"70
+[v findShuttergroupButton@button button `uc  1 a 1 wreg ]
+"74
+[v findShuttergroupButton@button button `uc  1 a 1 23 ]
+"85
+} 0
+"102 D:\GitHub\shuttercontrol\mplab\buttons.c
+[v _buttonsReset buttonsReset `(v  1 e 1 0 ]
+{
+"104
+[v buttonsReset@i i `uc  1 a 1 31 ]
+"128
+} 0
+"101 D:\GitHub\shuttercontrol\mplab\shuttergroups.c
+[v _releaseShuttergroupButton releaseShuttergroupButton `(v  1 e 1 0 ]
+{
+[v releaseShuttergroupButton@buttonIndex buttonIndex `uc  1 a 1 wreg ]
+[v releaseShuttergroupButton@buttonIndex buttonIndex `uc  1 a 1 wreg ]
+"103
+[v releaseShuttergroupButton@buttonIndex buttonIndex `uc  1 a 1 29 ]
+"109
+} 0
+"54
+[v _handleShutterShortMove handleShutterShortMove `(v  1 e 1 0 ]
+{
+[v handleShutterShortMove@group group `uc  1 a 1 wreg ]
+"56
+[v handleShutterShortMove@g g `uc  1 a 1 28 ]
+"54
+[v handleShutterShortMove@group group `uc  1 a 1 wreg ]
+"56
+[v handleShutterShortMove@group group `uc  1 a 1 27 ]
+"63
+} 0
+"198 D:\GitHub\shuttercontrol\mplab\shutter.c
+[v _testShortMove testShortMove `(v  1 e 1 0 ]
+{
+[v testShortMove@shutternumber shutternumber `uc  1 a 1 wreg ]
+[s S1027 shutter 3 `uc 1 state 1 0 `ui 1 count 2 1 ]
+"200
+[v testShortMove@sp sp `*.39S1027  1 a 2 25 ]
+"198
+[v testShortMove@shutternumber shutternumber `uc  1 a 1 wreg ]
+"200
+[v testShortMove@shutternumber shutternumber `uc  1 a 1 24 ]
+"207
+} 0
+"26 D:\GitHub\shuttercontrol\mplab\shuttergroups.c
+[v _readShutterGroupByte readShutterGroupByte `(uc  1 e 1 0 ]
+{
+[v readShutterGroupByte@number number `uc  1 a 1 wreg ]
+[v readShutterGroupByte@number number `uc  1 a 1 wreg ]
+[v readShutterGroupByte@which which `uc  1 p 1 23 ]
+"28
+[v readShutterGroupByte@number number `uc  1 a 1 24 ]
+"29
+} 0
+"26 D:\GitHub\shuttercontrol\mplab\eeprom.c
+[v _eepromRead eepromRead `(uc  1 e 1 0 ]
+{
+[v eepromRead@address address `uc  1 a 1 wreg ]
+[v eepromRead@address address `uc  1 a 1 wreg ]
+"28
+[v eepromRead@address address `uc  1 a 1 22 ]
+"34
+} 0
+"318 D:\GitHub\shuttercontrol\mplab\interrupts.c
+[v _low_isr low_isr `IIL(v  1 e 1 0 ]
+{
+"335
+} 0
+"17
+[v _high_isr high_isr `II(v  1 e 1 0 ]
+{
+"19
+[v high_isr@data data `uc  1 a 1 21 ]
+"310
+} 0
+"66 D:\GitHub\shuttercontrol\mplab\fifo.c
+[v i2_fifo3Get fifo3Get `(uc  1 e 1 0 ]
+{
+"68
+} 0
+"106
+[v i2_fifo3Empty fifo3Empty `(uc  1 e 1 0 ]
+{
+"110
+} 0
+"80
+[v _fifo2Put fifo2Put `(v  1 e 1 0 ]
+{
+[v fifo2Put@in in `uc  1 a 1 wreg ]
+[v fifo2Put@in in `uc  1 a 1 wreg ]
+[v fifo2Put@in in `uc  1 a 1 2 ]
+"82
+} 0
+"76
+[v _fifo1Put fifo1Put `(v  1 e 1 0 ]
+{
+[v fifo1Put@in in `uc  1 a 1 wreg ]
+[v fifo1Put@in in `uc  1 a 1 wreg ]
+[v fifo1Put@in in `uc  1 a 1 2 ]
+"78
+} 0

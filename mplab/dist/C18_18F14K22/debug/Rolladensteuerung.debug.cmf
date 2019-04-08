@@ -1,0 +1,920 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+end_init CODE 0 C6 C6 4 1
+reset_vec CODE 0 0 0 6 1
+idloc IDLOC 0 200000 200000 8 1
+config CONFIG 0 300000 300000 E 1
+$dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+intcodelo CODE 0 18 18 AE 1
+intcode CODE 0 8 8 10 1
+text32 CODE 0 A04 A04 1E 1
+intcode_body CODE 0 654 654 76 1
+text29 CODE 0 8AA 8AA 38 1
+text28 CODE 0 872 872 38 1
+text27 CODE 0 380 380 D6 1
+text26 CODE 0 AC2 AC2 C 1
+text25 CODE 0 5DE 5DE 76 1
+text24 CODE 0 568 568 76 1
+text23 CODE 0 4E6 4E6 82 1
+text22 CODE 0 7E6 7E6 4A 1
+text21 CODE 0 9E6 9E6 1E 1
+text20 CODE 0 72E 72E 60 1
+text19 CODE 0 A92 A92 1A 1
+text18 CODE 0 8E2 8E2 2E 1
+text17 CODE 0 456 456 90 1
+text16 CODE 0 960 960 24 1
+text15 CODE 0 830 830 42 1
+text14 CODE 0 ACE ACE 6 1
+text13 CODE 0 AAC AAC 16 1
+text12 CODE 0 AD4 AD4 4 1
+text11 CODE 0 78E 78E 58 1
+text10 CODE 0 938 938 28 1
+text9 CODE 0 910 910 28 1
+text8 CODE 0 9C6 9C6 20 1
+text7 CODE 0 9A6 9A6 20 1
+text6 CODE 0 CA CA 1B0 1
+text5 CODE 0 A76 A76 1C 1
+text4 CODE 0 A5A A5A 1C 1
+text3 CODE 0 A3E A3E 1C 1
+text2 CODE 0 A22 A22 1C 1
+text1 CODE 0 6CA 6CA 64 1
+text0 CODE 0 27A 27A 106 1
+cstackCOMRAM COMRAM 1 1 1 36 1
+bssBANK0 BANK0 1 60 60 98 1
+bssCOMRAM COMRAM 1 37 37 26 1
+cinit CODE 0 984 984 22 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0000F8-0000FF 1
+BANK1 000100-0001FF 1
+BIGRAM 00005D-00005F 1
+BIGRAM 0000F8-0001FF 1
+CODE 000006-000007 1
+CODE 000AD8-003DFF 1
+COMRAM 00005D-00005F 1
+CONST 000006-000007 1
+CONST 000AD8-003DFF 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 000AD8-003DFF 1
+RAM 0000F8-0001FF 1
+SFR 000F60-000FFC 1
+SMALLCONST 000AD8-003DFF 1
+STACK 0000F8-0001FF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":16 8 intcode CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":58 8 intcode CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic18f14k22.h":6562 18 intcodelo CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":39 18 intcodelo CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":42 5C intcodelo CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":44 60 intcodelo CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":45 64 intcodelo CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":46 66 intcodelo CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":47 6A intcodelo CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":50 6E intcodelo CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":52 72 intcodelo CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":53 76 intcodelo CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":54 78 intcodelo CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":55 7C intcodelo CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":58 80 intcodelo CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":122 CA text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":125 CC text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":127 DC text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":128 EC text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":130 FA text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":131 10C text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":139 11A text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":140 120 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":141 12C text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":143 12E text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":144 134 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":145 140 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":147 142 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":148 148 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":149 154 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":151 156 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":152 15C text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":153 168 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":154 178 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":156 17A text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":157 180 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":158 18C text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":159 19C text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":161 19E text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":162 1A4 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":163 1B4 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":164 1C0 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":166 1C2 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":167 1C8 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":168 1D8 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":169 1E4 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":173 1E6 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":174 1F8 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":179 206 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":180 218 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":133 226 text6 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":55 27A text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":58 27A text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":62 27E text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":63 282 text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":64 286 text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":65 28A text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":66 28E text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":77 292 text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":78 2B8 text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":79 2DE text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":80 304 text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":95 32A text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":96 32C text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":106 32E text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":108 338 text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":110 344 text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":113 34A text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":114 350 text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":115 354 text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":118 358 text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":119 35E text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":126 362 text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":127 368 text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":126 36E text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":131 37A text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\main.c":133 37E text0 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":126 380 text27 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":130 380 text27 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":132 38C text27 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":134 398 text27 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":136 3AA text27 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":137 3D0 text27 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":138 402 text27 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":140 412 text27 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":141 422 text27 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":143 424 text27 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":144 436 text27 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":147 444 text27 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":132 44C text27 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":80 456 text17 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":82 458 text17 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":84 46C text17 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":85 478 text17 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":87 488 text17 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":88 498 text17 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":90 4A8 text17 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":91 4BC text17 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":92 4D0 text17 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":94 4E4 text17 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":101 4E6 text23 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":103 4E6 text23 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":106 4EE text23 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":107 514 text23 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":110 546 text23 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":111 556 text23 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":53 568 text24 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":55 56A text24 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":57 57A text24 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":60 57C text24 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":61 588 text24 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":63 58A text24 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":64 596 text24 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":66 598 text24 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":70 5A6 text24 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":71 5B8 text24 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":57 5BA text24 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":18 5DE text25 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":20 5E0 text25 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":22 5F0 text25 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":25 5F2 text25 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":26 5FE text25 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":28 600 text25 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":29 60C text25 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":31 60E text25 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":32 61A text25 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":37 61C text25 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":38 62E text25 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":22 630 text25 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":16 654 intcode_body CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":21 680 intcode_body CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":23 684 intcode_body CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":24 688 intcode_body CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":25 68E intcode_body CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\interrupts.c":31 690 intcode_body CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":17 6CA text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":21 6CA text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":24 6DA text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":26 6E2 text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":27 6EA text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":28 6F0 text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":32 6F4 text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":33 6FC text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":34 702 text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":37 706 text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":38 70E text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":39 714 text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":43 718 text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":44 722 text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\masterswitch.c":45 728 text1 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":26 72E text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":38 730 text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":39 73C text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":43 742 text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":45 748 text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":46 750 text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":47 756 text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":51 75C text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":53 764 text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":54 776 text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":56 77C text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":58 782 text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":63 788 text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":65 78C text20 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":197 78E text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":201 78E text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":202 790 text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":204 798 text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":205 79A text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":206 79C text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":207 79E text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":208 7A0 text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":210 7A2 text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":211 7A8 text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":212 7BC text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":210 7D8 text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":214 7E2 text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":210 7E4 text11 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":65 7E6 text22 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":69 7E8 text22 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":71 7EE text22 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":72 808 text22 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":69 81E text22 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":74 826 text22 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":6 830 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":10 830 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":12 832 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":13 834 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":14 836 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":16 838 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":17 83A text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":23 83C text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":24 840 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":27 844 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":28 848 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":30 84C text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":31 850 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":32 854 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":41 858 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":42 85C text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":44 860 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":46 864 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":47 868 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":49 86C text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\hardware.c":52 870 text15 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":76 872 text28 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":78 874 text28 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":80 884 text28 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":81 89C text28 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":43 8AA text29 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":45 8AC text29 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":47 8BC text29 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":48 8D4 text29 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\fifo.c":40 8E2 text18 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\fifo.c":42 8E2 text18 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\fifo.c":45 8F6 text18 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":50 910 text9 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":53 912 text9 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":54 914 text9 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":55 914 text9 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":57 918 text9 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":58 91E text9 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":59 91E text9 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":61 922 text9 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":53 928 text9 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":67 938 text10 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":69 93A text10 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":70 93C text10 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":71 93C text10 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":73 940 text10 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":74 946 text10 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":75 946 text10 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":77 94A text10 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":69 950 text10 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":31 960 text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":33 960 text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":35 962 text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":36 966 text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":37 96A text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":39 96C text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":40 96E text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":41 970 text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":43 972 text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":48 978 text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":49 97A text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":50 97C text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":51 97E text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":57 980 text16 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":58 982 text16 CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3755 984 cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3757 984 cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3760 984 cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3815 984 cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3816 988 cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3817 98A cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3818 98A cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3819 98C cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3820 98E cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3823 990 cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3824 994 cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3825 996 cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3826 996 cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3827 998 cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3828 99A cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3834 99C cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3836 99C cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3837 99E cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3838 9A0 cinit CODE
+"C:\Users\marcus\AppData\Local\Temp\s5ho.":3839 9A2 cinit CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":18 9A6 text7 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":20 9A8 text7 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":22 9AA text7 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":23 9B0 text7 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":20 9B6 text7 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":33 9C6 text8 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":35 9C8 text8 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":37 9CA text8 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":38 9D0 text8 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutterhardware.c":35 9D6 text8 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":119 9E6 text21 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":121 9E8 text21 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":122 9F6 text21 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\buttons.c":123 A02 text21 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\fifo.c":53 A04 text32 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\fifo.c":59 A06 text32 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\fifo.c":60 A20 text32 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":94 A22 text2 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":98 A22 text2 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":99 A2E text2 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":98 A34 text2 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":85 A3E text3 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":89 A3E text3 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":90 A4A text3 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":89 A50 text3 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":112 A5A text4 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":116 A5A text4 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":117 A66 text4 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":116 A6C text4 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":103 A76 text5 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":107 A76 text5 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":108 A82 text5 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":107 A88 text5 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\fifo.c":65 A92 text19 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\fifo.c":67 A92 text19 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\rs485.c":21 AAC text13 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\rs485.c":25 AAC text13 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\rs485.c":26 AAE text13 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\rs485.c":28 AB0 text13 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\rs485.c":29 AB4 text13 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\rs485.c":31 AB8 text13 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\rs485.c":33 ABA text13 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\rs485.c":35 ABC text13 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\rs485.c":36 ABE text13 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\rs485.c":39 AC0 text13 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":233 AC2 text26 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":235 AC4 text26 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":236 AC8 text26 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":239 ACC text26 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":17 ACE text14 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":19 ACE text14 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\protocol.c":21 AD2 text14 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":226 AD4 text12 CODE
+"D:\projekte\11-MyHomeLight\Rolladensteuerung\shutter.c":228 AD4 text12 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_buttonDownReleased 872 0 CODE 0 text28 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_BBSIZ$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_c 4C 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_masterDownPressed A76 0 CODE 0 text5 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_buttonDownPressed 568 0 CODE 0 text24 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__S0 30000E 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__S1 F8 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__S2 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+buttonsReset@i 28 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hintentry 0 0 ABS 0 intentry dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lintentry 0 0 ABS 0 intentry dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+masterUpPressed@i 2B 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+buttonUpPressed@sp 29 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_initButtonTimer 984 0 CODE 0 text16 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+shutterStateMachine@which 25 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+decodeButton@code 2F 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_low_isr 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_LATA F89 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_LATB F8A 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_initHardware 830 0 CODE 0 text15 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_LATC F8B 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_decodeButton 9E6 0 CODE 0 text21 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_getNumShutters AD8 0 CODE 0 text12 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_protocolState 51 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_data 60 0 BANK0 1 bssBANK0 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_main 27A 0 CODE 0 text0 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_fifo 37 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+___sp 0 0 STACK 2 stack C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+__CFG_FOSC$IRC 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+shutterStateMachine@sp 26 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+start C6 0 CODE 0 init C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+buttonDownPressed@shutternumber 28 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+fifoGet@v 26 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_TMR0H FD7 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_TMR1H FCF 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_TMR0L FD6 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_TMR1L FCE 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_RCREG FAE 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_TRISA F92 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_TRISB F93 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_TRISC F94 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_PORTA F80 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_PORTB F81 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hirdata 0 0 CODE 0 irdata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lirdata 0 0 CODE 0 irdata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_PORTC F82 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__HRAM 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_ANSEL F7E 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__LRAM 1 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_buttonUpReleased 8E2 0 CODE 0 text29 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_masterDownPressed 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_fifoGet 910 0 CODE 0 text18 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lconfig 300000 0 CONFIG 0 config dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hbigram 0 0 ABS 0 bigram dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lbigram 0 0 ABS 0 bigram dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hrparam 0 0 ABS 0 rparam dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lrparam 0 0 ABS 0 rparam dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hram 0 0 ABS 0 ram dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lram 0 0 ABS 0 ram dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+fehler@ls 24 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hcomram 0 0 ABS 0 comram dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lcomram 0 0 ABS 0 comram dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hsfr 0 0 ABS 0 sfr dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lsfr 0 0 ABS 0 sfr dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hbss 0 0 RAM 1 bss dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lbss 0 0 RAM 1 bss dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_PWRTEN$ON 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_fifoPut A22 0 CODE 0 text32 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_TXREG1 FAD 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_shutterDirectionUp 938 0 CODE 0 text9 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_SPBRG1 FAF 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+main@recv 35 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_findButton 830 0 CODE 0 text22 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_buttonUpPressed 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_PIE1bits F9D 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_PIR1bits F9E 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_IPR1bits F9F 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_LATBbits F8A 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_LATCbits F8B 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+fehler@updown 27 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_RCONbits FD0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hintret 0 0 ABS 0 intret dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lintret 0 0 ABS 0 intret dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hramtop 200 0 RAM 0 ramtop dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lramtop 200 0 RAM 0 ramtop dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hstruct 0 0 COMRAM 1 struct dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lstruct 0 0 COMRAM 1 struct dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_high_isr 8 0 CODE 0 intcode dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_SPBRGH FB0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_ANSELH F7F 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+byteReceived@b 33 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_initProtocol 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hintcode 18 0 CODE 0 intcode dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lintcode 8 0 CODE 0 intcode dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_shutterOn 9A6 0 CODE 0 text7 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__pintcode 8 0 CODE 0 intcode dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_OSCCON FD3 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Habs1 0 0 ABS 0 abs1 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Labs1 0 0 ABS 0 abs1 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_buttonsReset 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+fifoPut@in 14 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_buttonReceived 568 0 CODE 0 text23 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_initShutterStateMachine 7E6 0 CODE 0 text11 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_shutterDirectionDown 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_masterUpReleased A22 0 CODE 0 text2 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_buttonUpReleased 8AA 0 CODE 0 text29 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_initRS485 AAC 0 CODE 0 text13 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_downState 4E 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_buttonUpReleased 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_testeMasterTaster 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_fifoIn 4F 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_decodeButton 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hdata 0 0 ABS 0 data dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ldata 0 0 ABS 0 data dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+findButton@i 27 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_device 4D 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+initButton@i 2C 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+stackhi 1FF 0 ABS 0 - C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+__Htemp 0 0 COMRAM 1 temp dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltemp 0 0 COMRAM 1 temp dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_fehler AC2 0 CODE 0 text26 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+stacklo F8 0 ABS 0 - C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hinit C6 0 CODE 0 init dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Linit C6 0 CODE 0 init dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hintcodelo C6 0 CODE 0 intcodelo dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lintcodelo 18 0 CODE 0 intcodelo dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_main 380 0 CODE 0 text0 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_button 4B 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__pintcodelo 18 0 CODE 0 intcodelo dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_initHardware 872 0 CODE 0 text15 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext 0 0 ABS 0 text dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext 0 0 ABS 0 text dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_shutterOff 9C6 0 CODE 0 text8 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_shutterStateMachine 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+end_of_initialization 99C 0 CODE 0 cinit dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_bShutterTimer 4A 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_CM1CON0 F6D 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_CM2CON0 F6B 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_initButtonTimer 960 0 CODE 0 text16 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+initButton@risingEdge 26 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_initButton 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_initShutterStateMachine 78E 0 CODE 0 text11 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+buttonsReset@bp 29 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+byteReceived@code 32 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_testeMasterTaster 72E 0 CODE 0 text1 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_fehler 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_TRISAbits F92 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_TRISCbits F94 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_PORTAbits F80 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_PORTCbits F82 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_T0CONbits FD5 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_T1CONbits FCD 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+fehler@lastState 26 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+fehler@modUpDown 25 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_high_isr 6CA 0 CODE 0 intcode_body dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+initShutterStateMachine@i 24 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_masterUpReleased A3E 0 CODE 0 text2 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hifardata 0 0 CODE 0 ifardata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lifardata 0 0 CODE 0 ifardata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hbank0 0 0 ABS 0 bank0 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lbank0 0 0 ABS 0 bank0 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hbank1 0 0 ABS 0 bank1 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lbank1 0 0 ABS 0 bank1 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+decodeButton@bp 2D 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_byteReceived 78E 0 CODE 0 text20 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+masterUpReleased@i 28 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hpowerup C6 0 CODE 0 powerup dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lpowerup C6 0 CODE 0 powerup dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+shutterOn@shutternumber 24 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_initRS485 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+high_isr@data 23 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext0 0 0 ABS 0 text0 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext0 0 0 ABS 0 text0 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+initButton@bn 24 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+buttonUpReleased@sp 26 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext1 0 0 ABS 0 text1 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext1 0 0 ABS 0 text1 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext0 27A 0 CODE 0 text0 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_INTCON2bits FF1 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext2 0 0 ABS 0 text2 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext2 0 0 ABS 0 text2 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext1 6CA 0 CODE 0 text1 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext3 0 0 ABS 0 text3 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext3 0 0 ABS 0 text3 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext2 A22 0 CODE 0 text2 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext4 0 0 ABS 0 text4 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext4 0 0 ABS 0 text4 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_masterDownReleased 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext3 A3E 0 CODE 0 text3 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext5 0 0 ABS 0 text5 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext5 0 0 ABS 0 text5 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext4 A5A 0 CODE 0 text4 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext6 0 0 ABS 0 text6 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext6 0 0 ABS 0 text6 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext5 A76 0 CODE 0 text5 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext7 0 0 ABS 0 text7 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext7 0 0 ABS 0 text7 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext6 CA 0 CODE 0 text6 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_fifoEmpty 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext8 0 0 ABS 0 text8 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext8 0 0 ABS 0 text8 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext7 9A6 0 CODE 0 text7 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__pbssCOMRAM 37 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext9 0 0 ABS 0 text9 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext9 0 0 ABS 0 text9 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext8 9C6 0 CODE 0 text8 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext9 910 0 CODE 0 text9 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_initProtocol AD4 0 CODE 0 text14 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_initButtonTimer 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_initButton 4E6 0 CODE 0 text17 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_shutterDirectionUp 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_initRS485 AC2 0 CODE 0 text13 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_HFOFST$ON 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_fifoEmpty A92 0 CODE 0 text19 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_initShutterStateMachine 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of__initialization 99C 0 CODE 0 cinit dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_shutterOn 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_buttonDownPressed 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+findButton@code 26 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_BAUDCONbits FB8 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+masterDownPressed@i 2B 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_shutterOff 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+buttonDownPressed@sp 29 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+?_findButton 24 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_buttonDownPressed 5DE 0 CODE 0 text24 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_decodeButton A04 0 CODE 0 text21 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_shutterDirectionDown 960 0 CODE 0 text10 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hidata 0 0 CODE 0 idata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lidata 0 0 CODE 0 idata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hstack 0 0 STACK 2 stack dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lstack 0 0 STACK 2 stack dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_high_isr 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_buttonUpPressed 654 0 CODE 0 text25 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+int_func 654 0 CODE 0 intcode_body dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_BORV$19 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_upState 52 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hparam 0 0 ABS 0 rparam dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lparam 0 0 ABS 0 rparam dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_fifoGet 8E2 0 CODE 0 text18 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hspace_0 30000E 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lspace_0 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hspace_1 F8 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lspace_1 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_shutterStateMachine 27A 0 CODE 0 text6 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+initButton@fallingEdge 28 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_initProtocol ACE 0 CODE 0 text14 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hspace_2 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lspace_2 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hcinit 0 0 ABS 0 cinit dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lcinit 0 0 ABS 0 cinit dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_fifoOut 50 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_fifoPut A04 0 CODE 0 text32 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__pcinit 984 0 CODE 0 cinit dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_shutter 53 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ramtop 200 0 RAM 0 ramtop C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+_low_isr 18 0 CODE 0 intcodelo dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_main 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+initButton@bp 2D 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_buttons 80 0 BANK0 1 bssBANK0 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hconst 0 0 CODE 0 const dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lconst 0 0 CODE 0 const dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_buttonReceived 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_fifoGet 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_byteReceived 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+shutterDirectionDown@shutternumber 24 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+masterDownReleased@i 28 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_getNumShutters AD4 0 CODE 0 text12 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_bButtonTimer 49 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+buttonUpPressed@shutternumber 28 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_shutterOn 9C6 0 CODE 0 text7 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_byteReceived 72E 0 CODE 0 text20 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+buttonDownReleased@sp 26 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_fehler ACE 0 CODE 0 text26 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_shutterOff 9E6 0 CODE 0 text8 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext10 0 0 ABS 0 text10 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext10 0 0 ABS 0 text10 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext20 0 0 ABS 0 text20 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext20 0 0 ABS 0 text20 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext10 938 0 CODE 0 text10 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext11 0 0 ABS 0 text11 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext11 0 0 ABS 0 text11 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_buttonDownReleased 8AA 0 CODE 0 text28 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext20 72E 0 CODE 0 text20 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext21 0 0 ABS 0 text21 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext21 0 0 ABS 0 text21 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext11 78E 0 CODE 0 text11 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext12 0 0 ABS 0 text12 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext12 0 0 ABS 0 text12 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext21 9E6 0 CODE 0 text21 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+byteReceived@checksum 31 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext22 0 0 ABS 0 text22 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext22 0 0 ABS 0 text22 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext12 AD4 0 CODE 0 text12 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext32 0 0 ABS 0 text32 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext13 0 0 ABS 0 text13 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext32 0 0 ABS 0 text32 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext13 0 0 ABS 0 text13 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext22 7E6 0 CODE 0 text22 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_RCSTA1bits FAB 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+buttonUpReleased@shutternumber 25 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext23 0 0 ABS 0 text23 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext23 0 0 ABS 0 text23 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_PLLEN$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext13 AAC 0 CODE 0 text13 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext32 A04 0 CODE 0 text32 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext33 0 0 ABS 0 text33 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext14 0 0 ABS 0 text14 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext33 0 0 ABS 0 text33 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext14 0 0 ABS 0 text14 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext23 4E6 0 CODE 0 text23 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext24 0 0 ABS 0 text24 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext24 0 0 ABS 0 text24 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext14 ACE 0 CODE 0 text14 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext33 0 0 CODE 0 text33 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_buttonsReset 456 0 CODE 0 text27 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext15 0 0 ABS 0 text15 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext15 0 0 ABS 0 text15 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext24 568 0 CODE 0 text24 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext25 0 0 ABS 0 text25 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext25 0 0 ABS 0 text25 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext15 830 0 CODE 0 text15 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+_testeMasterTaster 6CA 0 CODE 0 text1 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext16 0 0 ABS 0 text16 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext16 0 0 ABS 0 text16 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext25 5DE 0 CODE 0 text25 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_fifoPut 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext26 0 0 ABS 0 text26 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext26 0 0 ABS 0 text26 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext16 960 0 CODE 0 text16 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_buttonReceived 4E6 0 CODE 0 text23 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext17 0 0 ABS 0 text17 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext17 0 0 ABS 0 text17 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext26 AC2 0 CODE 0 text26 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext27 0 0 ABS 0 text27 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext27 0 0 ABS 0 text27 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext17 456 0 CODE 0 text17 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext18 0 0 ABS 0 text18 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext18 0 0 ABS 0 text18 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext27 380 0 CODE 0 text27 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext28 0 0 ABS 0 text28 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_findButton 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext28 0 0 ABS 0 text28 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext18 8E2 0 CODE 0 text18 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext19 0 0 ABS 0 text19 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext19 0 0 ABS 0 text19 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext28 872 0 CODE 0 text28 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_WDTEN$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Htext29 0 0 ABS 0 text29 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Ltext29 0 0 ABS 0 text29 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__ptext19 A92 0 CODE 0 text19 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+initButton@bf 25 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+__ptext29 8AA 0 CODE 0 text29 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_initHardware 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_OSCCONbits FD3 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+initButton@state 2A 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_INTCONbits FF2 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hend_init CA 0 CODE 0 end_init dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lend_init C6 0 CODE 0 end_init dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_findButton 7E6 0 CODE 0 text22 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_initButton 456 0 CODE 0 text17 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+shutterDirectionUp@shutternumber 24 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_masterUpPressed 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_fifoEmpty AAC 0 CODE 0 text19 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+buttonDownReleased@shutternumber 25 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Hreset_vec 6 0 CODE 0 reset_vec dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_shutterStateMachine CA 0 CODE 0 text6 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+buttonReceived@bp 2B 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__accesstop 60 0 ABS 0 - C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__pintcode_body 654 0 CODE 0 intcode_body dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_masterDownPressed A92 0 CODE 0 text5 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+shutterOff@shutternumber 24 0 COMRAM 1 cstackCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+intlevel0 0 0 CODE 0 text C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+intlevel1 0 0 CODE 0 text C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+__size_of_buttonDownReleased 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+intlevel2 0 0 CODE 0 text C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+intlevel3 0 0 CODE 0 text C:\Users\marcus\AppData\Local\Temp\s5ho.obj
+_shutterDirectionUp 910 0 CODE 0 text9 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_masterUpReleased 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_masterUpPressed A5A 0 CODE 0 text3 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_entprellCounter 47 0 COMRAM 1 bssCOMRAM dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+start_initialization 984 0 CODE 0 cinit dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_shutterDirectionDown 938 0 CODE 0 text10 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_BOREN$SBORDIS 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_buttonsReset 380 0 CODE 0 text27 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__size_of_getNumShutters 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_low_isr C6 0 CODE 0 intcodelo dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__initialization 984 0 CODE 0 cinit dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_PCLKEN$ON 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__activetblptr 2 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_masterUpPressed A3E 0 CODE 0 text3 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_buttonUpPressed 5DE 0 CODE 0 text25 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+_masterDownReleased A5A 0 CODE 0 text4 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+__end_of_masterDownReleased A76 0 CODE 0 text4 dist/C18_18F14K22/debug\Rolladensteuerung.debug.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 6 1
+intcode 0 8 8 10 1
+intcodelo 0 18 18 AC0 1
+config 0 300000 300000 E 1
+idloc 0 200000 200000 8 1
+cstackCOMRAM 1 1 1 5C 1
+bssBANK0 1 60 60 98 1

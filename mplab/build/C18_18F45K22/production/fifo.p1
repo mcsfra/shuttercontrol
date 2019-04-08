@@ -1,0 +1,221 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[; ;fifo.h: 8: extern void fifoInit ( void );
+[; ;fifo.h: 10: extern unsigned char fifo1Get ( void );
+[; ;fifo.h: 11: extern void fifo1Put ( unsigned char in );
+[; ;fifo.h: 12: extern unsigned char fifo1Empty ( void );
+[; ;fifo.h: 14: extern unsigned char fifo2Get ( void );
+[; ;fifo.h: 15: extern void fifo2Put ( unsigned char in );
+[; ;fifo.h: 16: extern unsigned char fifo2Empty ( void );
+[; ;fifo.h: 18: extern unsigned char fifo3Get ( void );
+[; ;fifo.h: 19: extern void fifo3Put ( unsigned char in );
+[; ;fifo.h: 20: extern unsigned char fifo3Empty ( void );
+"12 fifo.c
+[v _fifo1 `uc ~T0 @X0 -> 16 `i e ]
+[; ;fifo.c: 12: unsigned char fifo1[16];
+"13
+[v _fifo2 `uc ~T0 @X0 -> 16 `i e ]
+[; ;fifo.c: 13: unsigned char fifo2[16];
+"14
+[v _fifo3 `uc ~T0 @X0 -> 16 `i e ]
+[; ;fifo.c: 14: unsigned char fifo3[16];
+"19
+[v _fifo1In `uc ~T0 @X0 1 e ]
+[; ;fifo.c: 19: unsigned char fifo1In;
+"20
+[v _fifo2In `uc ~T0 @X0 1 e ]
+[; ;fifo.c: 20: unsigned char fifo2In;
+"21
+[v _fifo3In `uc ~T0 @X0 1 e ]
+[; ;fifo.c: 21: unsigned char fifo3In;
+"26
+[v _fifo1Out `uc ~T0 @X0 1 e ]
+[; ;fifo.c: 26: unsigned char fifo1Out;
+"27
+[v _fifo2Out `uc ~T0 @X0 1 e ]
+[; ;fifo.c: 27: unsigned char fifo2Out;
+"28
+[v _fifo3Out `uc ~T0 @X0 1 e ]
+[; ;fifo.c: 28: unsigned char fifo3Out;
+"34
+[v _fifoInit `(v ~T0 @X0 1 ef ]
+{
+[; ;fifo.c: 34: void fifoInit() {
+[e :U _fifoInit ]
+[f ]
+"36
+[v _i `uc ~T0 @X0 1 a ]
+[; ;fifo.c: 36: unsigned char i;
+[; ;fifo.c: 38: for ( i = 0; i < 16; i++) {
+"38
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 16 `i 2  ]
+[e $U 3  ]
+[e :U 2 ]
+{
+[; ;fifo.c: 39: fifo1[i] = 0x00;
+"39
+[e = *U + &U _fifo1 * -> _i `ux -> -> # *U &U _fifo1 `ui `ux -> -> 0 `i `uc ]
+[; ;fifo.c: 40: fifo2[i] = 0x00;
+"40
+[e = *U + &U _fifo2 * -> _i `ux -> -> # *U &U _fifo2 `ui `ux -> -> 0 `i `uc ]
+[; ;fifo.c: 41: fifo3[i] = 0x00;
+"41
+[e = *U + &U _fifo3 * -> _i `ux -> -> # *U &U _fifo3 `ui `ux -> -> 0 `i `uc ]
+"42
+}
+"38
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 16 `i 2  ]
+[e :U 3 ]
+"42
+}
+[; ;fifo.c: 42: }
+[; ;fifo.c: 44: fifo1In = 0;
+"44
+[e = _fifo1In -> -> 0 `i `uc ]
+[; ;fifo.c: 45: fifo1Out = 0;
+"45
+[e = _fifo1Out -> -> 0 `i `uc ]
+[; ;fifo.c: 46: fifo2In = 0;
+"46
+[e = _fifo2In -> -> 0 `i `uc ]
+[; ;fifo.c: 47: fifo2Out = 0;
+"47
+[e = _fifo2Out -> -> 0 `i `uc ]
+[; ;fifo.c: 48: fifo3In = 0;
+"48
+[e = _fifo3In -> -> 0 `i `uc ]
+[; ;fifo.c: 49: fifo3Out = 0;
+"49
+[e = _fifo3Out -> -> 0 `i `uc ]
+[; ;fifo.c: 50: }
+"50
+[e :UE 1 ]
+}
+"58
+[v _fifo1Get `(uc ~T0 @X0 1 ef ]
+{
+[; ;fifo.c: 58: unsigned char fifo1Get() {
+[e :U _fifo1Get ]
+[f ]
+[; ;fifo.c: 59: return fifo1[fifo1Out++ & 0x0F];
+"59
+[e ) *U + &U _fifo1 * -> -> & -> ++ _fifo1Out -> -> 1 `i `uc `i -> 15 `i `ui `ux -> -> # *U &U _fifo1 `ui `ux ]
+[e $UE 5  ]
+[; ;fifo.c: 60: }
+"60
+[e :UE 5 ]
+}
+"62
+[v _fifo2Get `(uc ~T0 @X0 1 ef ]
+{
+[; ;fifo.c: 62: unsigned char fifo2Get() {
+[e :U _fifo2Get ]
+[f ]
+[; ;fifo.c: 63: return fifo2[fifo2Out++ & 0x0F];
+"63
+[e ) *U + &U _fifo2 * -> -> & -> ++ _fifo2Out -> -> 1 `i `uc `i -> 15 `i `ui `ux -> -> # *U &U _fifo2 `ui `ux ]
+[e $UE 6  ]
+[; ;fifo.c: 64: }
+"64
+[e :UE 6 ]
+}
+"66
+[v _fifo3Get `(uc ~T0 @X0 1 ef ]
+{
+[; ;fifo.c: 66: unsigned char fifo3Get() {
+[e :U _fifo3Get ]
+[f ]
+[; ;fifo.c: 67: return fifo3[fifo3Out++ & 0x0F];
+"67
+[e ) *U + &U _fifo3 * -> -> & -> ++ _fifo3Out -> -> 1 `i `uc `i -> 15 `i `ui `ux -> -> # *U &U _fifo3 `ui `ux ]
+[e $UE 7  ]
+[; ;fifo.c: 68: }
+"68
+[e :UE 7 ]
+}
+"76
+[v _fifo1Put `(v ~T0 @X0 1 ef1`uc ]
+{
+[; ;fifo.c: 76: void fifo1Put(unsigned char in) {
+[e :U _fifo1Put ]
+[v _in `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;fifo.c: 77: fifo1[fifo1In++ & 0x0F] = in;
+"77
+[e = *U + &U _fifo1 * -> -> & -> ++ _fifo1In -> -> 1 `i `uc `i -> 15 `i `ui `ux -> -> # *U &U _fifo1 `ui `ux _in ]
+[; ;fifo.c: 78: }
+"78
+[e :UE 8 ]
+}
+"80
+[v _fifo2Put `(v ~T0 @X0 1 ef1`uc ]
+{
+[; ;fifo.c: 80: void fifo2Put(unsigned char in) {
+[e :U _fifo2Put ]
+[v _in `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;fifo.c: 81: fifo2[fifo2In++ & 0x0F] = in;
+"81
+[e = *U + &U _fifo2 * -> -> & -> ++ _fifo2In -> -> 1 `i `uc `i -> 15 `i `ui `ux -> -> # *U &U _fifo2 `ui `ux _in ]
+[; ;fifo.c: 82: }
+"82
+[e :UE 9 ]
+}
+"84
+[v _fifo3Put `(v ~T0 @X0 1 ef1`uc ]
+{
+[; ;fifo.c: 84: void fifo3Put(unsigned char in) {
+[e :U _fifo3Put ]
+[v _in `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;fifo.c: 85: fifo3[fifo3In++ & 0x0F] = in;
+"85
+[e = *U + &U _fifo3 * -> -> & -> ++ _fifo3In -> -> 1 `i `uc `i -> 15 `i `ui `ux -> -> # *U &U _fifo3 `ui `ux _in ]
+[; ;fifo.c: 86: }
+"86
+[e :UE 10 ]
+}
+"93
+[v _fifo1Empty `(uc ~T0 @X0 1 ef ]
+{
+[; ;fifo.c: 93: unsigned char fifo1Empty() {
+[e :U _fifo1Empty ]
+[f ]
+[; ;fifo.c: 95: return (fifo1In & 0x0F) == (fifo1Out & 0x0F);
+"95
+[e ) -> -> == & -> _fifo1In `i -> 15 `i & -> _fifo1Out `i -> 15 `i `i `uc ]
+[e $UE 11  ]
+[; ;fifo.c: 97: }
+"97
+[e :UE 11 ]
+}
+"99
+[v _fifo2Empty `(uc ~T0 @X0 1 ef ]
+{
+[; ;fifo.c: 99: unsigned char fifo2Empty() {
+[e :U _fifo2Empty ]
+[f ]
+[; ;fifo.c: 101: return (fifo2In & 0x0F) == (fifo2Out & 0x0F);
+"101
+[e ) -> -> == & -> _fifo2In `i -> 15 `i & -> _fifo2Out `i -> 15 `i `i `uc ]
+[e $UE 12  ]
+[; ;fifo.c: 103: }
+"103
+[e :UE 12 ]
+}
+"106
+[v _fifo3Empty `(uc ~T0 @X0 1 ef ]
+{
+[; ;fifo.c: 106: unsigned char fifo3Empty() {
+[e :U _fifo3Empty ]
+[f ]
+[; ;fifo.c: 108: return (fifo3In & 0x0F) == (fifo3Out & 0x0F);
+"108
+[e ) -> -> == & -> _fifo3In `i -> 15 `i & -> _fifo3Out `i -> 15 `i `i `uc ]
+[e $UE 13  ]
+[; ;fifo.c: 110: }
+"110
+[e :UE 13 ]
+}
